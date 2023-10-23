@@ -17,6 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from ProyectoLegajosApp import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home, name="Home"),
+    path('blog', views.blog, name="Blog"),
+    path('contacto', views.contacto, name="Contacto"),
+
 ]
