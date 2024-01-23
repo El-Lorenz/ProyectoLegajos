@@ -22,7 +22,7 @@ from ProyectoLegajosApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="Home"),
-    path('blog', views.blog, name="Blog"),
+    path('candidato', views.candidato, name="Candidato"),
     path('contacto', views.contacto, name="Contacto"),
 
 ]
