@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Titulo</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'lib/adminlte-3.2.0/plugins/fontawesome-free/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lib/adminlte-3.2.0/css/adminlte.min.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+        <a></a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Inicio de sesión</p>
+
+            <form action="" method="post" id="login-form">
+                <div class="input-group mb-3">
+                    <input type="text" id="id_username" name="username" class="form-control" placeholder="">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+                <div class="input-group mb-3">
+                    <input type="password" id="id_password" name="password" class="form-control" placeholder="">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                    
+                    <input type="hidden" name="next" value=""/>
+                </div>
+
+                    <div class="password-reset-link">
+                        <a href="">¿Olvidó su contraseña o usuario?</a>
+                    </div>
+                
+                <div class="row">
+                    <div class="col-8">
+        
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+
+            <!-- /.login-box-body -->
+        </div>
+        <!-- /.login-box -->
+    </div>
+
+    <script src="{% static 'lib/adminlte-3.2.0/plugins/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'lib/adminlte-3.2.0/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+</div>
+</body>
+</html>
