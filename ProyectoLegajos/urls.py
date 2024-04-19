@@ -16,11 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+# Algorisoft.
+from autenticacion.views import LoginFormView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('autenticacion/',include('autenticacion.urls')),
     path('', include('ProyectoLegajosApp.urls')),
+    # Algorisoft.
+    path('autenticacion/', LoginFormView.as_view()),
 
 ]
