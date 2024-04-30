@@ -60,14 +60,14 @@
         </div>
         <!--<div class="info">-->
         <div class="brand-text font-weight-light">
-          <a class="d-block">
+          <a class="d-block">&nbsp;
           {% if user.is_authenticated %}
           <!--<a href="#" class="d-block">Usuario</a>-->
           Hola {{user.username}}
 
           {% else %}
 
-          <a href="#">Login</a>&nbsp;&nbsp;<a href="Autenticacion">Registrate</a>
+          <a href="#">Login</a>&nbsp;&nbsp;<a href="{% url 'Autenticacion' %}">Registrate</a>
 
           {% endif  %}
         </a>  
