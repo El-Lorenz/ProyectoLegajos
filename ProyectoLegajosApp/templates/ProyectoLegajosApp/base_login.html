@@ -19,7 +19,6 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
@@ -27,14 +26,16 @@
     </div>
     <!-- /.login-logo -->
     <div class="card">
-        <div class="card-body login-card-body">
-            <p class="login-box-msg">Inicio de sesión</p>
+        <!--Contenido cambiante-->
+        {% block content %}
 
-            <form action="" method="post" id="login-form">
-                {% csrf_token %}
+        {% endblock %}
+        <!-- <div class="card-body login-card-body"> -->
+            <!--<p class="login-box-msg">Inicio de sesión</p> -->
+
+            <!-- <form action="" method="post" id="login-form">
                 <div class="input-group mb-3">
-                    <!-- <input type="text" id="id_username" name="username" class="form-control" placeholder=""> -->
-                    {{ form.username }}
+                    <input type="text" id="id_username" name="username" class="form-control" placeholder="">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-user"></span>
@@ -42,9 +43,9 @@
                     </div>
                     
                 </div>
+        
                 <div class="input-group mb-3">
-                    <!-- <input type="password" id="id_password" name="password" class="form-control" placeholder=""> -->
-                    {{ form.password }}
+                    <input type="password" id="id_password" name="password" class="form-control" placeholder="">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
@@ -62,16 +63,17 @@
                     <div class="col-8">
         
                     </div>
-                    <!-- /.col -->
+                    
                     <div class="col-4">
                         <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
                     </div>
-                    <!-- /.col -->
+                    
                 </div>
-            </form>
+            </form> -->
+            
 
             <!-- /.login-box-body -->
-        </div>
+        <!-- </div> -->
         <!-- /.login-box -->
     </div>
 
