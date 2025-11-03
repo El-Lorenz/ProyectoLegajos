@@ -13,7 +13,8 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{% static 'lib/adminlte-3.2.0/css/adminlte.min.css' %}">
 </head>
-<body class="hold-transition sidebar-mini layout-boxed">
+<!--<body class="hold-transition sidebar-mini layout-boxed">-->
+<body class="hold-transition sidebar-mini"></body>  
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
@@ -95,6 +96,15 @@
               <i class="nav-icon far fa-envelope"></i>
               <p>
                 Contacto
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <!--<a href="../candidato.html" class="nav-link">-->
+              <a href="{% url 'Candidato' %}" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Candidatos
               </p>
             </a>
           </li>
